@@ -6,7 +6,7 @@
     <!--link for jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <!--link to local js file-->
-    <script src= "wheelOfFortune.js" ></script> 
+    <script src= "wheelOfFortune_3.js" ></script> 
     <!--link for css style sheet-->
     <link rel="stylesheet" type="text/css" href="wheelOfFortune.css">
   </head>
@@ -15,24 +15,28 @@
     <div class="text" id ="header">
         <h1>WHEEL OF FORTUNE!</h1>
     </div>
-
-    <div class="text" id="alpha">
-        <h2>
-            <span id="used">(letters used) &nbsp;</span>
-            <span id="userAlpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
-        </h2>
+    <div class= "container">
+    <div class="" id="alpha">
+        
+        <!-- <span id="used">(letters used) &nbsp;</span> -->
     </div>
+        
+        <div>
+            &nbsp;
+        </div>
+        
 
     <div class="text" id = "choice">
-      <button type="button" id ='spinbutt'> SPIN! </button>
+      <button type="button" id ='spinbutt'> SPIN THE WHEEL! </button>
       <p id = 'or'>or</p>
-      <button type="button" id ='guessbutt'>GUESS! </button>
+      <button type="button" id ='guessbutt'>GUESS THE PHRASE! </button>
     </div>
-       
+    </div>
         
-    <div id="wheel">
+    <div class = "animation" id="wheel" width="300" height="150">
         <img src="wheel_share.png">
     </div>
+       
     
     <div class="text" id = "moneyTitle">
        <p>AND THE WHEEL OF FORTUNE LANDS ON....</p>
@@ -41,12 +45,19 @@
     <div class="text" id="moneyWon">
        <!-- show where the wheel of fortune landed on in current spin -->
     </div>
+       
+        <p class="text" id = "guessedLetter">What letter will you guess???</p>
+
     
     <h2 class= "text" id="winningsLabel">TOTAL WINNINGS:</h2>
     <p id="tally"> ZERO </p> <!--THIS SHOULD SHOW THE PLAYR'S TOTAL WINNIGS -->
 
-    <p class="text" id = "guessedLetter">What letter will you guess???</p>
 
-    <p class="text" id = "userBoard">_________________________</p>
+    <p class="" id = "userBoard"></p>
+       
+       
+       
   </body>
+    
+    
 </html>
